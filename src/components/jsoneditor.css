@@ -408,9 +408,20 @@ div.jsoneditor-tree .jsoneditor-schema-error {
 .jsoneditor-schema-error:hover .jsoneditor-popover,
 .jsoneditor-schema-error:focus .jsoneditor-popover {
   display: block;
+  animation: fade-in .3s linear 1, move-up .3s linear 1;
   -webkit-animation: fade-in .3s linear 1, move-up .3s linear 1;
   -moz-animation: fade-in .3s linear 1, move-up .3s linear 1;
   -ms-animation: fade-in .3s linear 1, move-up .3s linear 1;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes fade-in {
@@ -950,7 +961,7 @@ div.jsoneditor{
 }
 
 .jsoneditor-read-write{
+  user-modify: read-write-plaintext-only;
   -webkit-user-modify: read-write-plaintext-only;
   -moz-user-modify: read-write-plaintext-only;
-  user-modify: read-write-plaintext-only;
 }
