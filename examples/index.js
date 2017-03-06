@@ -32,6 +32,6 @@ const json = {
   };
 
 render(
-  <JsonEdit json={json} changeVal={changeVal} />,
+  <JsonEdit json={json} changeVal={changeVal} ></JsonEdit>,
   document.getElementById('root')
 )

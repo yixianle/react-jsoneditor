@@ -11,10 +11,10 @@ export default class ObjectItem extends Component {
   state = {
     foldNode: true
   }
+	
   //展开折叠子节点
   handleToggleFold = () => {
-    //this.setState({ editing: true })
-    //console.log("---handleToggleFold----")
+		
     this.setState({
         foldNode: !this.state.foldNode
     })

@@ -61,19 +61,17 @@ const appendLevelJson=(keyName,val,parentId)=>{
 
 // 树形数据转为平铺数据 
 export function convertLevelJson(tree) {
-  //console.log(tree,"init json")
   levelJson={}
   // 初始化根节点
   appendLevelJson("root",tree)
   // 树形结构转为平铺结构
   smooth(tree)
-  //console.log(levelJson,111)
+  
   return levelJson
 }
 
 // 平铺数据转为树形数据
 export function convertTreeJson(level){
-  //console.log(levelJson,5566)
   levelJson = level||{}
   return levelJson[0] && toTree(levelJson[0])
 }

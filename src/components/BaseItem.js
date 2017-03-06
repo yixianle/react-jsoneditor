@@ -9,8 +9,7 @@ import classnames from 'classnames'
 export default class ObjectItem extends Component {
   handleBlur = (key,e) => {
     const { id, type, changeVal } = this.props
-    //this.setState({ editing: true })
-    //console.log(key)
+    
     let val = e.target.innerHTML
     if(type==="number"){
       val = isNaN(val-0)?val:(val-0)
@@ -20,9 +19,6 @@ export default class ObjectItem extends Component {
       val = val==="null"?null:val
     }
     changeVal(id, val)
-    //console.log(e.target.innerHTML,id)
-    //changeVal(key,e.target.innerHTML,parent)
-    //console.log(this)
   }
   
   render(){

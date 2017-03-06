@@ -1,11 +1,8 @@
 import React , {Component} from 'react'
-//import { bindActionCreators } from 'redux'
-//import { connect } from 'react-redux'
 
 import Node from '../containers/Node';
 
 export default class App extends Component {
-  //const App = ({json}) =>{ console.log(json,999); 
   render() {
     const { json } = this.props
     
@@ -26,15 +23,3 @@ export default class App extends Component {
     </div>
   }
 }
-
-// const mapDispatchToProps = dispatch => ({
-//     actions: bindActionCreators(TodoActions, dispatch)
-// })
-
-// const mapStateToProps = (state) => {
-//   console.log(state,777)
-//   return {
-//       json:state
-//   }
-// }
-// export default connect()(App)
