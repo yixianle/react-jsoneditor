@@ -39,7 +39,9 @@
     "json",
     "editor",
     "react",
-    "redux"
+    "redux",
+    "view",
+    "format"
   ],
   "author": "lele",
   "license": "ISC",
