@@ -1,6 +1,6 @@
 {
   "name": "react-jsoneditor",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "Json editor of react version",
   "main": "index.js",
   "dependencies": {
