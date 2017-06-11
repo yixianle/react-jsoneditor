@@ -1,2 +1,2 @@
 // main
-module.exports = require('./src/app');
+module.exports = require('./build/app');

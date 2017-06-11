@@ -2,7 +2,7 @@ import React from 'react'
 import { render } from 'react-dom'
 
 
-import JsonEdit from "../src/app"
+import JsonEdit from "../src/app.js"
 
 function changeVal(val){
   console.log(val,"-----changeVal------")
